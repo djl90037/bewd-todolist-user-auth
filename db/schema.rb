@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 2022_10_11_135211) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "username"
     t.string "password"
+    t.integer "tasks_id"
+    t.index ["tasks_id"], name: "index_users_on_tasks_id"
   end
 
 end

@@ -2,5 +2,6 @@ class AddAttributesToUsers < ActiveRecord::Migration[6.1]
   def change
     add_column :users, :username, :string
     add_column :users, :password, :string
+    add_belongs_to :users, :tasks
   end
 end
